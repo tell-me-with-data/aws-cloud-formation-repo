@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  DevPostgreSQL:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      AllocatedStorage: 10
+      AvailabilityZone: sa-east-1a
+      DBInstanceClass: db.t2.micro
+      DBName: kemmer_and_calvin_group
+      Engine: postgres
+      EngineVersion: 12.8
+      MasterUsername: admin_bryan
+      MasterUserPassword: 12345678
+      PubliclyAccessible: true
