@@ -4,5 +4,9 @@
 
 - dev-first-stack-cli-1
 ```
-aws cloudformation create-stack --stack-namedev-first-stack-cli-1 --template-body file:///home/bryanprojects/aws/aws-cloud-formation-repo/mydynamo.yml--parameters ParameterKey=DynamoAtributoParameterValue=nombre ParameterKey=NombreDynamoParameterValue=Clientes --profile bryanuser
+aws cloudformation create-stack --stack-name dev-first-stack-cli-1 --template-body file:///home/bryanprojects/aws/aws-cloud-formation-repo/mydynamo.yml--parameters ParameterKey=DynamoAtributoParameterValue=nombre ParameterKey=NombreDynamoParameterValue=Clientes --profile bryanuser
+```
+
+```
+aws cloudformation create-stack --stack-name dev-first-stack-cli-1 --template-body file:///home/bryan/projects/aws/aws-cloud-formation-repo/s3template.yaml --parameters ParameterKey=NombreBucket,ParameterValue=s3-try-bucket-dev-for-template --profile bryanuser
 ```
