@@ -1,0 +1,3 @@
+*.zip
+psycopg2
+myconfig.py
